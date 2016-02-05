@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeef4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#535456">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="买单"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <View android:layout_marginTop="10dp"
+        style="@style/view_line_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="@string/shop" />
+
+            <TextView
+                android:id="@+id/shop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|right"
+                android:layout_margin="20dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="@string/consume_money" />
+
+            <EditText
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:gravity="center|right"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_margin="20dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="@string/ac_contact_tel" />
+
+            <EditText
+                android:id="@+id/contact_tel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:gravity="center|right"
+                android:textColorHint="@android:color/black"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"
+                android:text="@string/bill_num" />
+
+            <EditText
+                android:id="@+id/bill_num"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@null"
+                android:layout_marginRight="20dp"
+                android:gravity="center|right"
+                android:textColorHint="@android:color/black"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ImageView android:id="@+id/bill"
+                android:layout_width="100dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="100dp"
+                android:src="@drawable/camera"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:text="上传小票照片"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pay_offline"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:background="@drawable/comput_r"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/offline_pay" />
+        <Button
+            android:id="@+id/pay_online"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:background="@drawable/add_mem"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="@string/online_pay" />
+    </LinearLayout>
+
+</LinearLayout>

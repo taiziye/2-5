@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/img"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:text="地面店名称" />
+
+            <TextView
+                android:id="@+id/commodity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:singleLine="true"
+                android:text="服装、女装、男装" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:singleLine="true"
+                android:textColor="#999999"
+                android:text="上海市徐汇区人民路1003" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.2"
+            android:layout_height="62dp">
+            <LinearLayout
+                android:id="@+id/collect"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:paddingLeft="3dp"
+                android:background="@drawable/cancel_collect">
+
+                <ImageView android:id="@+id/s_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/s_collect"/>
+
+                <TextView android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="@string/collect"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

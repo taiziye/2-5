@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="#efeef4"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp">
+
+        <RadioButton
+            android:id="@+id/check"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:clickable="false"
+             />
+
+        <TextView android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="@string/detail_discount_type" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:text="国庆" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="8折" />
+
+        <!--<TextView android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="已确认"/>-->
+    </LinearLayout>
+
+    <!--<RelativeLayout
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="@string/detail_son_money"
+            />
+
+        <TextView android:id="@+id/money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:text="1,200"
+            />
+    </RelativeLayout>
+
+    <View
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+=======
+        style="@style/view_line_style" />
+>>>>>>> Stashed changes
+        style="@style/view_line_style" />-->
+
+</LinearLayout>
